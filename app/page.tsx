@@ -299,7 +299,7 @@ export default function Component() {
       {/* Testimonial */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12">What They're Saying</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-12">What They&apos;re Saying</h2>
 
           <div className="bg-green-50 rounded-2xl p-8 relative">
             <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8">
@@ -316,9 +316,9 @@ export default function Component() {
               </div>
               <div className="flex-1 text-left">
                 <p className="text-lg text-gray-700 mb-4 italic">
-                  "Illovo Nursery transformed our backyard into a stunning garden paradise. Their expertise, quality
-                  plants, and exceptional service exceeded all our expectations. We couldn't be happier with the
-                  results!"
+                  &quot;Illovo Nursery transformed our backyard into a stunning garden paradise. Their expertise, quality
+                  plants, and exceptional service exceeded all our expectations. We couldn&apos;t be happier with the
+                  results!&quot;
                 </p>
                 <div>
                   <div className="font-semibold text-gray-900">Sarah Johnson</div>
