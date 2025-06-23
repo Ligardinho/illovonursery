@@ -1,103 +1,461 @@
-import Image from "next/image";
+import Image from "next/image"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
+import { Star, Play, Phone, Mail, MapPin, Leaf, TreePine, Flower, Shovel } from "lucide-react"
 
-export default function Home() {
+export default function Component() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen bg-white">
+      {/* Header */}
+      <header className="bg-white shadow-sm sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            <div className="flex items-center space-x-2">
+              <img src="/logo.png" className="h-16 w-auto"/>
+            </div>
+            <nav className="hidden md:flex space-x-8">
+              <a href="#" className="text-gray-700 hover:text-green-600 font-medium">
+                Home
+              </a>
+              <a href="#" className="text-gray-700 hover:text-green-600 font-medium">
+                About
+              </a>
+              <a href="#" className="text-gray-700 hover:text-green-600 font-medium">
+                Plants
+              </a>
+              <a href="#" className="text-gray-700 hover:text-green-600 font-medium">
+                Services
+              </a>
+              <a href="#" className="text-gray-700 hover:text-green-600 font-medium">
+                Contact
+              </a>
+            </nav>
+            <Button className="bg-green-600 hover:bg-green-700 rounded-full px-7 py-3">Contact</Button>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </header>
+
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-[#0D3824] to-green-600 text-white py-20 relative overflow-hidden mx-[50px] rounded-2xl mt-5">
+        <div className="absolute inset-0 bg-black/10"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="flex gap-12 items-center">
+            <div>
+              <h1 className="text-5xl lg:text-6xl font-semibold leading-tight mb-6">
+                Transform Your Garden
+                <span className="block">Dream into Reality</span>
+              </h1>
+              <p className="text-xl text-green-100 mb-8 leading-relaxed">
+                Discover premium plants, expert landscaping services, and everything you need to create your perfect
+                garden oasis at Illovo Nursery.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button className="bg-green-500 hover:bg-green-400 font-medium text-white px-10 py-6 text-md">
+                  Visit Us Now
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Create from a small garden section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="flex items-center justify-center mb-4">
+              <Leaf className="h-6 w-6 text-green-600 mr-2" />
+              <span className="text-green-600 font-semibold">Illovo Nursery</span>
+            </div>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Create from a small garden</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Start your gardening journey with our carefully selected plants and expert guidance to transform any space
+              into a green paradise.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-8">
+              <Image
+                src="/placeholder.svg?height=300&width=500"
+                alt="Small garden transformation"
+                width={500}
+                height={300}
+                className="rounded-lg shadow-lg"
+              />
+              <div className="grid grid-cols-2 gap-4">
+                <Image
+                  src="/placeholder.svg?height=150&width=200"
+                  alt="Colorful flowers"
+                  width={200}
+                  height={150}
+                  className="rounded-lg shadow-md"
+                />
+                <Image
+                  src="/placeholder.svg?height=150&width=200"
+                  alt="Garden tools"
+                  width={200}
+                  height={150}
+                  className="rounded-lg shadow-md"
+                />
+              </div>
+            </div>
+
+            <div className="bg-green-700 text-white p-8 rounded-2xl">
+              <h3 className="text-2xl font-bold mb-4">Create from a small garden to beautify your environment</h3>
+              <p className="text-green-100 mb-6">
+                Whether you have a tiny balcony or a sprawling backyard, our expert team will help you design and create
+                the perfect garden space that reflects your style and needs.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                  <span>Professional garden design consultation</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                  <span>Premium quality plants and materials</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                  <span>Ongoing maintenance and support</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Trees section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-3 gap-8 items-center">
+            <div className="lg:col-span-2">
+              <Image
+                src="/placeholder.svg?height=400&width=600"
+                alt="Beautiful trees"
+                width={600}
+                height={400}
+                className="rounded-2xl shadow-lg"
+              />
+            </div>
+            <div className="bg-green-800 text-white p-8 rounded-2xl">
+              <h3 className="text-3xl font-bold mb-4">Trees are the lungs of the world</h3>
+              <p className="text-green-100 mb-6">
+                Discover our extensive collection of indigenous and exotic trees that will transform your landscape
+                while contributing to a healthier environment.
+              </p>
+              <Button className="bg-green-500 hover:bg-green-400 text-green-900">Explore Trees</Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* New Arrivals */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">New Arrivals</h2>
+            <p className="text-xl text-gray-600">
+              Our garden experts have curated a collection of plants, fresh from the nursery just for you.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { name: "Fiddle Leaf Fig", price: "R299", image: "/placeholder.svg?height=200&width=200" },
+              { name: "Snake Plant", price: "R149", image: "/placeholder.svg?height=200&width=200" },
+              { name: "Monstera Deliciosa", price: "R399", image: "/placeholder.svg?height=200&width=200" },
+              { name: "Peace Lily", price: "R199", image: "/placeholder.svg?height=200&width=200" },
+              { name: "Rubber Plant", price: "R249", image: "/placeholder.svg?height=200&width=200" },
+              { name: "Aloe Vera", price: "R89", image: "/placeholder.svg?height=200&width=200" },
+              { name: "Bird of Paradise", price: "R449", image: "/placeholder.svg?height=200&width=200" },
+              { name: "Cactus Collection", price: "R129", image: "/placeholder.svg?height=200&width=200" },
+            ].map((plant, index) => (
+              <Card key={index} className="group hover:shadow-lg transition-shadow">
+                <CardContent className="p-4">
+                  <div className="aspect-square mb-4 overflow-hidden rounded-lg bg-gray-100">
+                    <Image
+                      src={plant.image || "/placeholder.svg"}
+                      alt={plant.name}
+                      width={200}
+                      height={200}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                    />
+                  </div>
+                  <h3 className="font-semibold text-gray-900 mb-2">{plant.name}</h3>
+                  <div className="flex items-center justify-between">
+                    <span className="text-lg font-bold text-green-600">{plant.price}</span>
+                    <Button size="sm" className="bg-green-600 hover:bg-green-700">
+                      Add to Cart
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Fragrant Flowers Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="bg-green-800 text-white p-12 rounded-2xl">
+              <h3 className="text-3xl font-bold mb-6">FRAGRANT FLOWER SCENT</h3>
+              <p className="text-green-100 mb-8 text-lg">
+                Experience the enchanting world of fragrant flowers that will fill your garden with delightful scents
+                throughout the seasons.
+              </p>
+              <div className="space-y-6">
+                <div className="flex items-center space-x-4">
+                  <div className="text-4xl font-bold text-green-400">95%</div>
+                  <div>
+                    <div className="font-semibold">Customer Satisfaction</div>
+                    <div className="text-green-200 text-sm">Based on 500+ reviews</div>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Star className="h-5 w-5 text-yellow-400 fill-current" />
+                  <Star className="h-5 w-5 text-yellow-400 fill-current" />
+                  <Star className="h-5 w-5 text-yellow-400 fill-current" />
+                  <Star className="h-5 w-5 text-yellow-400 fill-current" />
+                  <Star className="h-5 w-5 text-yellow-400 fill-current" />
+                  <span className="text-green-200 ml-2">Excellent Rating</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <Image
+                src="/placeholder.svg?height=500&width=500"
+                alt="Fragrant flowers"
+                width={500}
+                height={500}
+                className="rounded-2xl shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Services */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="flex items-center justify-center mb-4">
+              <TreePine className="h-6 w-6 text-green-600 mr-2" />
+              <span className="text-green-600 font-semibold">Our Services</span>
+            </div>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Complete gardening and landscaping services available for your outdoor space
+            </h2>
+          </div>
+
+          <div className="space-y-6">
+            {[
+              {
+                title: "Garden Design",
+                description:
+                  "Custom garden design services tailored to your space, style, and budget. Our expert designers will create a beautiful and functional outdoor space.",
+                icon: <Flower className="h-8 w-8" />,
+              },
+              {
+                title: "Landscape Installation",
+                description:
+                  "Our expert landscapers will bring your garden design to life, meticulously planting each tree, shrub, and flower to create the garden of your dreams, tailored to your unique outdoor space.",
+                icon: <Shovel className="h-8 w-8" />,
+              },
+              {
+                title: "Hardscaping",
+                description:
+                  "Professional hardscaping services including patios, walkways, retaining walls, and water features to complement your garden design.",
+                icon: <TreePine className="h-8 w-8" />,
+              },
+              {
+                title: "Maintenance",
+                description:
+                  "Regular garden maintenance services to keep your outdoor space looking its best year-round, including pruning, fertilizing, and pest control.",
+                icon: <Leaf className="h-8 w-8" />,
+              },
+            ].map((service, index) => (
+              <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
+                <div className="flex items-start space-x-4">
+                  <div className="text-green-600 mt-1">{service.icon}</div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">{service.title}</h3>
+                    <p className="text-gray-600">{service.description}</p>
+                  </div>
+                  <Button variant="outline" size="sm">
+                    Learn More
+                  </Button>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonial */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12">What They're Saying</h2>
+
+          <div className="bg-green-50 rounded-2xl p-8 relative">
+            <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8">
+              <div className="relative">
+                <div className="w-32 h-32 bg-green-600 rounded-full flex items-center justify-center">
+                  <Image
+                    src="/placeholder.svg?height=120&width=120"
+                    alt="Customer testimonial"
+                    width={120}
+                    height={120}
+                    className="rounded-full"
+                  />
+                </div>
+              </div>
+              <div className="flex-1 text-left">
+                <p className="text-lg text-gray-700 mb-4 italic">
+                  "Illovo Nursery transformed our backyard into a stunning garden paradise. Their expertise, quality
+                  plants, and exceptional service exceeded all our expectations. We couldn't be happier with the
+                  results!"
+                </p>
+                <div>
+                  <div className="font-semibold text-gray-900">Sarah Johnson</div>
+                  <div className="text-gray-600">Homeowner, Sandton</div>
+                </div>
+                <div className="flex items-center mt-2">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Video Section */}
+      <section className="py-20 bg-green-800 text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center">
+            <h2 className="text-4xl font-bold mb-8">Building Your Dream Garden</h2>
+            <div className="relative inline-block">
+              <Image
+                src="/placeholder.svg?height=400&width=600"
+                alt="Garden video thumbnail"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-lg"
+              />
+              <Button
+                size="lg"
+                className="absolute inset-0 m-auto w-16 h-16 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-sm"
+              >
+                <Play className="h-6 w-6 text-white ml-1" />
+              </Button>
+            </div>
+            <p className="text-xl text-green-100 mt-8 max-w-2xl mx-auto">
+              Watch how we transform ordinary spaces into extraordinary gardens. See our process from design to
+              completion.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div>
+              <div className="flex items-center space-x-2 mb-6">
+                <Leaf className="h-8 w-8 text-green-500" />
+                <span className="text-xl font-bold">Illovo Nursery</span>
+              </div>
+              <p className="text-gray-400 mb-6">
+                Creating beautiful gardens and outdoor spaces for over 20 years. Your trusted partner in bringing nature
+                home.
+              </p>
+              <Button className="bg-green-600 hover:bg-green-700">Visit Our Nursery</Button>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li>
+                  <a href="#" className="hover:text-white">
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white">
+                    Our Plants
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white">
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white">
+                    Garden Care Tips
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Services</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li>
+                  <a href="#" className="hover:text-white">
+                    Garden Design
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white">
+                    Landscaping
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white">
+                    Plant Installation
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white">
+                    Maintenance
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
+              <div className="space-y-3 text-gray-400">
+                <div className="flex items-center space-x-3">
+                  <MapPin className="h-5 w-5 text-green-500" />
+                  <span>40 Elizabeth Ave, Illovo Beach, Durban, 3136</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Phone className="h-5 w-5 text-green-500" />
+                  <span>+27 31 916 6212</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Mail className="h-5 w-5 text-green-500" />
+                  <span>info@illovo-nursery.co.za</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+            <p>&copy; 2025 Illovo Nursery. All rights reserved.</p>
+          </div>
+        </div>
       </footer>
     </div>
-  );
+  )
 }
