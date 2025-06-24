@@ -77,28 +77,12 @@ export default function Component() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <Image
-                src="/placeholder.svg?height=300&width=500"
+                src="/2.jpg"
                 alt="Small garden transformation"
                 width={500}
                 height={300}
-                className="rounded-lg shadow-lg"
+                className="rounded-xl shadow-lg object-cover w-[540px] h-[343px]"
               />
-              <div className="grid grid-cols-2 gap-4">
-                <Image
-                  src="/placeholder.svg?height=150&width=200"
-                  alt="Colorful flowers"
-                  width={200}
-                  height={150}
-                  className="rounded-lg shadow-md"
-                />
-                <Image
-                  src="/placeholder.svg?height=150&width=200"
-                  alt="Garden tools"
-                  width={200}
-                  height={150}
-                  className="rounded-lg shadow-md"
-                />
-              </div>
             </div>
 
             <div className="bg-green-700 text-white p-8 rounded-2xl">
@@ -132,11 +116,11 @@ export default function Component() {
           <div className="grid lg:grid-cols-3 gap-8 items-center">
             <div className="lg:col-span-2">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/1.jpg"
                 alt="Beautiful trees"
                 width={600}
                 height={400}
-                className="rounded-2xl shadow-lg"
+                className="rounded-2xl shadow-lg w-[800px] h-[308px] object-cover"
               />
             </div>
             <div className="bg-green-800 text-white p-8 rounded-2xl">
@@ -228,11 +212,11 @@ export default function Component() {
 
             <div>
               <Image
-                src="/placeholder.svg?height=500&width=500"
+                src="/6.jpg"
                 alt="Fragrant flowers"
                 width={500}
                 height={500}
-                className="rounded-2xl shadow-lg"
+                className="rounded-2xl shadow-lg object-cover h-[340px] w-[550px] object-top"
               />
             </div>
           </div>
