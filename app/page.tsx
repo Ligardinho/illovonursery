@@ -135,7 +135,7 @@ export default function Component() {
                 Discover our extensive collection of indigenous and exotic trees that will transform your landscape
                 while contributing to a healthier environment.
               </p>
-              <Button className="bg-green-500 hover:bg-green-400 text-green-900">Explore Trees</Button>
+              <Button className="bg-green-500 hover:bg-green-400 text-white">Explore Trees</Button>
             </div>
           </div>
         </div>
