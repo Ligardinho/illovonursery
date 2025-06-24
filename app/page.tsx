@@ -2,6 +2,12 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Star, Play, Phone, Mail, MapPin, Leaf, TreePine, Flower, Shovel } from "lucide-react"
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 
 export default function Component() {
   return (
@@ -36,21 +42,21 @@ export default function Component() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0D3824] to-green-600 text-white py-20 relative overflow-hidden mx-[50px] rounded-2xl mt-5">
+      <section className="bg-gradient-to-br from-[#0D3824] to-green-600 text-white py-20 relative overflow-hidden md:mx-[30px] mx-[15px] rounded-2xl mt-5">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex gap-12 items-center">
             <div>
-              <h1 className="text-5xl lg:text-6xl font-semibold leading-tight mb-6">
+              <h1 className="text-4xl md:text-6xl font-semibold leading-tight mb-6">
                 Transform Your Garden
                 <span className="block">Dream into Reality</span>
               </h1>
-              <p className="text-xl text-green-100 mb-8 leading-relaxed">
+              <p className="md:text-xl text-lg text-green-100 mb-8 leading-relaxed">
                 Discover premium plants, expert landscaping services, and everything you need to create your perfect
                 garden oasis at Illovo Nursery.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-green-500 hover:bg-green-400 font-medium text-white px-10 py-6 text-md">
+                <Button className="bg-green-500 hover:bg-green-400 font-medium text-white md:px-10 py-6 md:text-md text-sm">
                   Visit Us Now
                 </Button>
               </div>
@@ -74,14 +80,14 @@ export default function Component() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div className="space-y-8">
               <Image
                 src="/2.jpg"
                 alt="Small garden transformation"
                 width={500}
                 height={300}
-                className="rounded-xl shadow-lg object-cover w-[540px] h-[343px]"
+                className="rounded-xl shadow-lg object-cover md:w-[540px] h-[343px] min-w-full"
               />
             </div>
 
@@ -216,7 +222,7 @@ export default function Component() {
                 alt="Fragrant flowers"
                 width={500}
                 height={500}
-                className="rounded-2xl shadow-lg object-cover h-[340px] w-[550px] object-top"
+                className="rounded-2xl shadow-lg object-cover h-[340px] min-w-full md:w-[550px] object-top"
               />
             </div>
           </div>
@@ -263,18 +269,21 @@ export default function Component() {
                 icon: <Leaf className="h-8 w-8" />,
               },
             ].map((service, index) => (
-              <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
-                <div className="flex items-start space-x-4">
-                  <div className="text-green-600 mt-1">{service.icon}</div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">{service.title}</h3>
-                    <p className="text-gray-600">{service.description}</p>
-                  </div>
-                  <Button variant="outline" size="sm">
-                    Learn More
-                  </Button>
-                </div>
-              </Card>
+              <div key={index} className="p-6 hover:shadow-lg transition-shadow bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm max-w-full">
+                <Accordion type="single" collapsible className="flex items-start space-x-4 max-w-full">
+                  <AccordionItem value="item-1" className="min-w-full">
+                    <AccordionTrigger className="flex flex-row justify-between items-center max-w-full">
+                      <div className="text-green-600 mt-1 flex flex-row justify-between items-center gap-3">
+                        {service.icon}
+                        <h3 className="text-xl font-semibold text-gray-900">{service.title}</h3>
+                      </div>
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <p className="text-gray-600 max-w-full">{service.description}</p>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+              </div>
             ))}
           </div>
         </div>
@@ -354,8 +363,7 @@ export default function Component() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-6">
-                <Leaf className="h-8 w-8 text-green-500" />
-                <span className="text-xl font-bold">Illovo Nursery</span>
+                <img src="/logo.png" className="h-16 w-auto brightness-0 invert-100"/>
               </div>
               <p className="text-gray-400 mb-6">
                 Creating beautiful gardens and outdoor spaces for over 20 years. Your trusted partner in bringing nature
