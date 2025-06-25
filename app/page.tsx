@@ -19,7 +19,7 @@ export default function Component() {
             <div className="flex items-center space-x-2">
               <img src="/logo.png" className="h-16 w-auto"/>
             </div>
-            <nav className="hidden md:flex space-x-8">
+            <nav className="hidden lg:flex space-x-8">
               <a href="#" className="text-gray-700 hover:text-green-600 font-medium">
                 Home
               </a>
@@ -44,7 +44,7 @@ export default function Component() {
       </header>
 
       {/* Hero Section */}
-      <section id="home" className="bg-gradient-to-br from-[#0D3824] to-green-600 text-white py-20 relative overflow-hidden max-w-7xl md:mx-auto mx-[15px] px-4 sm:px-6 lg:px-8 rounded-2xl my-5">
+      <section id="home" className="bg-gradient-to-br from-[#0D3824] to-green-600 text-white py-20 relative overflow-hidden max-w-7xl xl:mx-auto mx-[15px] px-4 sm:px-6 lg:px-8 rounded-2xl my-5">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex gap-12 items-center">
@@ -58,9 +58,11 @@ export default function Component() {
                 garden oasis at Illovo Nursery.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-green-500 hover:bg-green-400 font-medium text-white md:px-10 py-6 md:text-md text-sm">
+                <a href="https://maps.app.goo.gl/38eySRVVsQuhjSRE9" target="_ ">
+                <Button className="bg-green-500 hover:bg-green-400 font-medium text-white md:px-10 py-6 md:text-lg text-sm">
                   Visit Us Now
                 </Button>
+                </a>
               </div>
             </div>
           </div>
@@ -89,11 +91,11 @@ export default function Component() {
                 alt="Small garden transformation"
                 width={500}
                 height={300}
-                className="rounded-xl shadow-lg object-cover md:w-[540px] h-[343px] min-w-full"
+                className="rounded-xl shadow-lg object-cover md:w-[540px] xl:h-[360px] h-[360px] min-w-full"
               />
             </div>
 
-            <div className="bg-green-700 text-white p-8 rounded-2xl">
+            <div className="bg-green-700 text-white p-8 rounded-2xl sm:max-h-[360px] lg:min-h-[360px]">
               <h3 className="text-2xl font-bold mb-4">Create from a small garden to beautify your environment</h3>
               <p className="text-green-100 mb-6">
                 Whether you have a tiny balcony or a sprawling backyard, our expert team will help you design and create
@@ -128,16 +130,16 @@ export default function Component() {
                 alt="Beautiful trees"
                 width={600}
                 height={400}
-                className="rounded-2xl shadow-lg w-[800px] h-[308px] object-cover"
+                className="rounded-2xl shadow-lg w-[800px] lg:h-[308px] h-[370px] object-cover"
               />
             </div>
-            <div className="bg-green-800 text-white p-8 rounded-2xl">
+            <div className="bg-green-800 text-white p-8 rounded-2xl max-h-[375px] lg:h-[308px] xl:h-[308px] flex flex-col justify-center">
               <h3 className="text-3xl font-bold mb-4">Trees are the lungs of the world</h3>
               <p className="text-green-100 mb-6">
                 Discover our extensive collection of indigenous and exotic trees that will transform your landscape
                 while contributing to a healthier environment.
               </p>
-              <Button className="bg-green-500 hover:bg-green-400 text-white">Explore Trees</Button>
+              <Button className="bg-green-500 hover:bg-green-400 text-white w-fit">Explore Trees</Button>
             </div>
           </div>
         </div>
@@ -177,9 +179,11 @@ export default function Component() {
                   </div>
                   <h3 className="font-semibold text-gray-900 mb-2">{plant.name}</h3>
                   <div className="flex items-center justify-between">
-                    <Button size="sm" className="bg-green-600 hover:bg-green-700">
-                      Visit Us Now
-                    </Button>
+                    <a href="https://illovonursery.co.za/terrace/" target="_ " >
+                      <Button size="sm" className="bg-green-600 hover:bg-green-700">
+                        Visit Us Now
+                      </Button>
+                    </a>
                   </div>
                 </CardContent>
               </Card>
