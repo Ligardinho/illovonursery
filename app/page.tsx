@@ -42,7 +42,7 @@ export default function Component() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0D3824] to-green-600 text-white py-20 relative overflow-hidden md:mx-[30px] mx-[15px] rounded-2xl mt-5">
+      <section className="bg-gradient-to-br from-[#0D3824] to-green-600 text-white py-20 relative overflow-hidden max-w-7xl md:mx-auto mx-[15px] px-4 sm:px-6 lg:px-8 rounded-2xl mt-5">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex gap-12 items-center">
@@ -190,11 +190,11 @@ export default function Component() {
       {/* Fragrant Flowers Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="bg-green-800 text-white p-12 rounded-2xl">
-              <h3 className="text-3xl font-bold mb-6">FRAGRANT FLOWER SCENT</h3>
+          <div className="flex lg:flex-row flex-col items-center justify-center gap-8">
+            <div className="bg-green-800 text-white p-12 rounded-2xl max-w-7xl mx-auto lg:mx-0 lg:w-[400px] lg:h-[440px]">
+              <h3 className="text-3xl font-bold mb-6">FRAGRANT <br/>FLOWER SCENT</h3>
               <p className="text-green-100 mb-8 text-lg">
-                Experience the enchanting world of fragrant flowers that will fill your garden with delightful scents
+                Experience the enchanting world of <br/>fragrant flowers that will fill your <br/>garden with delightful scents<br/>
                 throughout the seasons.
               </p>
               <div className="space-y-6">
@@ -216,14 +216,28 @@ export default function Component() {
               </div>
             </div>
 
-            <div>
+            <div className="bg-green-800 text-white p-5 rounded-2xl xl:w-[850px] xl:grid hidden xl:grid-cols-2 items-center gap-6 xl:h-[440px] lg:h-[520px] max-w-full">
               <Image
                 src="/6.jpg"
                 alt="Fragrant flowers"
                 width={500}
                 height={500}
-                className="rounded-2xl shadow-lg object-cover h-[340px] min-w-full md:w-[550px] object-top"
+                className="rounded-2xl shadow-lg object-cover h-[400px] w-[300px] md:w-[550px] object-bottom"
               />
+              <div className="flex flex-col space-y-6 max-w-fit">
+                <div>
+                  <h1 className="font-semibold">Seeds and Seedlings</h1>
+                  <p className="text-gray-200">Choose from a variety of premium seeds and healthy seedlings to ensure a strong start for your crops.</p>
+                </div>
+                <div>
+                  <h1 className="font-semibold">Fertilizers and Soil Enhancers</h1>
+                  <p className="text-gray-200">Enhance soil fertility and promote healthy plant growth with our range of organic fertilizers and soil amendments.</p>
+                </div>
+                <div>
+                  <h1 className="font-semibold">Crop Protection</h1>
+                  <p className="text-gray-200">Safeguard your crops from pests and diseases with our proven range of environmentally friendly crop protection solutions.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -297,13 +311,13 @@ export default function Component() {
           <div className="bg-green-50 rounded-2xl p-8 relative">
             <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8">
               <div className="relative">
-                <div className="w-32 h-32 bg-green-600 rounded-full flex items-center justify-center">
+                <div className="rounded-full flex items-center justify-center">
                   <Image
-                    src="/placeholder.svg?height=120&width=120"
+                    src="/profile.jpg"
                     alt="Customer testimonial"
                     width={120}
                     height={120}
-                    className="rounded-full"
+                    className="rounded-full object-cover w-32 h-32"
                   />
                 </div>
               </div>
@@ -315,7 +329,7 @@ export default function Component() {
                 </p>
                 <div>
                   <div className="font-semibold text-gray-900">Sarah Johnson</div>
-                  <div className="text-gray-600">Homeowner, Sandton</div>
+                  <div className="text-gray-600">Homeowner, Illovo</div>
                 </div>
                 <div className="flex items-center mt-2">
                   {[...Array(5)].map((_, i) => (
@@ -336,11 +350,11 @@ export default function Component() {
             <h2 className="text-4xl font-bold mb-8">Building Your Dream Garden</h2>
             <div className="relative inline-block">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/4.jpg"
                 alt="Garden video thumbnail"
                 width={600}
                 height={400}
-                className="rounded-lg shadow-lg"
+                className="rounded-lg shadow-lg object-cover h-[400px] w-[600px]"
               />
               <Button
                 size="lg"
