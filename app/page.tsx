@@ -23,26 +23,28 @@ export default function Component() {
               <a href="#" className="text-gray-700 hover:text-green-600 font-medium">
                 Home
               </a>
-              <a href="#" className="text-gray-700 hover:text-green-600 font-medium">
+              <a href="#about" className="text-gray-700 hover:text-green-600 font-medium">
                 About
               </a>
-              <a href="#" className="text-gray-700 hover:text-green-600 font-medium">
-                Plants
+              <a href="#products" className="text-gray-700 hover:text-green-600 font-medium">
+                Products
               </a>
-              <a href="#" className="text-gray-700 hover:text-green-600 font-medium">
+              <a href="#services" className="text-gray-700 hover:text-green-600 font-medium">
                 Services
               </a>
-              <a href="#" className="text-gray-700 hover:text-green-600 font-medium">
-                Contact
+              <a href="https://illovonursery.co.za/terrace/" target="_ " className="text-gray-700 hover:text-green-600 font-medium">
+                The Terrace
               </a>
             </nav>
-            <Button className="bg-green-600 hover:bg-green-700 rounded-full px-7 py-3">Contact</Button>
+            <a href="#contact">
+              <Button className="bg-green-600 hover:bg-green-700 rounded-full px-7 py-3">Contact</Button>
+            </a>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0D3824] to-green-600 text-white py-20 relative overflow-hidden max-w-7xl md:mx-auto mx-[15px] px-4 sm:px-6 lg:px-8 rounded-2xl my-5">
+      <section id="home" className="bg-gradient-to-br from-[#0D3824] to-green-600 text-white py-20 relative overflow-hidden max-w-7xl md:mx-auto mx-[15px] px-4 sm:px-6 lg:px-8 rounded-2xl my-5">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex gap-12 items-center">
@@ -66,7 +68,7 @@ export default function Component() {
       </section>
 
       {/* Create from a small garden section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50" id="about">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center mb-4">
@@ -142,7 +144,7 @@ export default function Component() {
       </section>
 
       {/* New Arrivals */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50" id="products">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">What We Offer</h2>
@@ -198,10 +200,10 @@ export default function Component() {
               </p>
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
-                  <div className="text-4xl font-bold text-green-400">95%</div>
+                  <div className="text-4xl font-bold text-green-400">84%</div>
                   <div>
                     <div className="font-semibold">Customer Satisfaction</div>
-                    <div className="text-green-200 text-sm">Based on 500+ reviews</div>
+                    <div className="text-green-200 text-sm">Based on 1,100+ reviews</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-2">
@@ -209,7 +211,7 @@ export default function Component() {
                   <Star className="h-5 w-5 text-yellow-400 fill-current" />
                   <Star className="h-5 w-5 text-yellow-400 fill-current" />
                   <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                  <Star className="h-5 w-5 text-yellow-400 fill-current" />
+                  <Star className="h-5 w-5 text-white fill-current" />
                   <span className="text-green-200 ml-2">Excellent Rating</span>
                 </div>
               </div>
@@ -243,7 +245,7 @@ export default function Component() {
       </section>
 
       {/* Our Services */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50" id="services">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center mb-4">
@@ -327,7 +329,7 @@ export default function Component() {
                   results!&quot;
                 </p>
                 <div>
-                  <div className="font-semibold text-gray-900">Sarah Johnson</div>
+                  <div className="font-semibold text-gray-900">Alexia Carrington</div>
                   <div className="text-gray-600">Homeowner, Illovo</div>
                 </div>
                 <div className="flex items-center mt-2">
@@ -371,7 +373,7 @@ export default function Component() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-16">
+      <footer className="bg-gray-900 text-white py-16" id="contact">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
@@ -379,33 +381,35 @@ export default function Component() {
                 <img src="/logo.png" className="h-16 w-auto brightness-0 invert-100"/>
               </div>
               <p className="text-gray-400 mb-6">
-                Creating beautiful gardens and outdoor spaces for over 20 years. Your trusted partner in bringing nature
+                Creating beautiful gardens and outdoor spaces for over 35 years. Your trusted partner in bringing nature
                 home.
               </p>
-              <Button className="bg-green-600 hover:bg-green-700">Visit Our Nursery</Button>
+              <a href="https://maps.app.goo.gl/38eySRVVsQuhjSRE9" target="_ ">
+                  <Button className="bg-green-600 hover:bg-green-700">Visit Our Nursery</Button>
+              </a>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a href="#about" className="hover:text-white">
                     About Us
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
-                    Our Plants
+                  <a href="#products" className="hover:text-white">
+                    Our Products
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a href="#services" className="hover:text-white">
                     Services
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
-                    Garden Care Tips
+                  <a href="https://illovonursery.co.za/terrace/" target="_ " className="hover:text-white">
+                  The Terrace Restaurent
                   </a>
                 </li>
               </ul>
