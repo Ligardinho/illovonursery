@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
-import ObserverProvider from "@/components/ObserverProvider"
 
 const outfit = Outfit({
   subsets: ['latin'],
@@ -22,14 +21,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <ObserverProvider>
       <body
         className={outfit.className}
         suppressHydrationWarning
       >
         {children}
       </body>
-      </ObserverProvider>
     </html>
   );
 }
