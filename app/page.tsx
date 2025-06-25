@@ -391,7 +391,7 @@ export default function Component() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="intersect:motion-preset-expand intersect:motion-delay-0 intersect:motion-duration-1200 intersect:motion-blur-in-xl">
               <div className="flex items-center space-x-2 mb-6">
-                <img src="/logo.png" className="h-16 w-auto brightness-0 invert-100"/>
+                <img src="/logo.png" className="h-16 w-auto brightness-0 invert-100 intersect:motion-preset-expand intersect:motion-delay-100 intersect:motion-duration-1200 intersect:motion-blur-in-xl"/>
               </div>
               <p className="text-gray-400 mb-6">
                 Creating beautiful gardens and outdoor spaces for over 35 years. Your trusted partner in bringing nature
