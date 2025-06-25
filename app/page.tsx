@@ -322,7 +322,7 @@ export default function Component() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 intersect:motion-preset-expand intersect:motion-delay-100 intersect:motion-duration-1200 intersect-once">What They&apos;re Saying</h2>
 
-          <div className="bg-green-50 rounded-2xl p-8 relative intersect:motion-translate-y-in-100 intersect:motion-rotate-in-45 intersect:motion-blur-in-sm">
+          <div className="bg-green-50 rounded-2xl p-8 relative intersect:motion-translate-y-in-100 intersect:motion-rotate-in-45 intersect:motion-blur-in-sm motion-delay-50">
             <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8">
               <div className="relative">
                 <div className="rounded-full flex items-center justify-center">
