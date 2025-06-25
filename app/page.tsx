@@ -322,7 +322,7 @@ export default function Component() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 intersect:motion-preset-expand intersect:motion-delay-100 intersect:motion-duration-1200 intersect-once">What They&apos;re Saying</h2>
 
-          <div className="bg-green-50 rounded-2xl p-8 relative intersect:motion-translate-y-in-100 intersect:motion-rotate-in-45 intersect:motion-blur-in-sm motion-delay-50">
+          <div className="bg-green-50 rounded-2xl p-8 relative intersect:motion-preset-expand intersect:motion-delay-100 intersect:motion-duration-1200 intersect-once intersect-once">
             <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8">
               <div className="relative">
                 <div className="rounded-full flex items-center justify-center">
@@ -361,8 +361,8 @@ export default function Component() {
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
-            <h2 className="text-4xl font-bold mb-8">Building Your Dream Garden</h2>
-            <div className="relative inline-block">
+            <h2 className="text-4xl font-bold mb-8 intersect:motion-preset-expand intersect:motion-delay-100 intersect:motion-duration-1200 intersect-once">Building Your Dream Garden</h2>
+            <div className="relative inline-block intersect:motion-preset-expand intersect:motion-delay-100 intersect:motion-duration-1200 intersect-once">
               <Image
                 src="/4.jpg"
                 alt="Garden video thumbnail"
@@ -377,7 +377,7 @@ export default function Component() {
                 <Play className="h-6 w-6 text-white ml-1" />
               </Button>
             </div>
-            <p className="text-xl text-green-100 mt-8 max-w-2xl mx-auto">
+            <p className="text-xl text-green-100 mt-8 max-w-2xl mx-auto intersect:motion-preset-expand intersect:motion-delay-100 intersect:motion-duration-1200 intersect-once">
               Watch how we transform ordinary spaces into extraordinary gardens. See our process from design to
               completion.
             </p>
@@ -386,8 +386,8 @@ export default function Component() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-16" id="contact">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <footer className="bg-gray-900 text-white py-16 " id="contact">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 intersect:motion-preset-expand intersect:motion-delay-100 intersect:motion-duration-1200 intersect-once">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-6">
