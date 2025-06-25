@@ -42,7 +42,7 @@ export default function Component() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0D3824] to-green-600 text-white py-20 relative overflow-hidden max-w-7xl md:mx-auto mx-[15px] px-4 sm:px-6 lg:px-8 rounded-2xl mt-5">
+      <section className="bg-gradient-to-br from-[#0D3824] to-green-600 text-white py-20 relative overflow-hidden max-w-7xl md:mx-auto mx-[15px] px-4 sm:px-6 lg:px-8 rounded-2xl my-5">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex gap-12 items-center">
