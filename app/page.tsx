@@ -179,7 +179,7 @@ export default function Component() {
                   </div>
                   <h3 className="font-semibold text-gray-900 mb-2">{plant.name}</h3>
                   <div className="flex items-center justify-between">
-                    <a href="https://illovonursery.co.za/terrace/" target="_ " >
+                    <a href="https://maps.app.goo.gl/38eySRVVsQuhjSRE9" target="_ " >
                       <Button size="sm" className="bg-green-600 hover:bg-green-700">
                         Visit Us Now
                       </Button>
