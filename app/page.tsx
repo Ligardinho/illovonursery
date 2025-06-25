@@ -145,22 +145,22 @@ export default function Component() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">New Arrivals</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">What We Offer</h2>
             <p className="text-xl text-gray-600">
-              Our garden experts have curated a collection of plants, fresh from the nursery just for you.
+              Our garden experts have curated a collection of products, fresh from the nursery just for you.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { name: "Fiddle Leaf Fig", price: "R299", image: "/placeholder.svg?height=200&width=200" },
-              { name: "Snake Plant", price: "R149", image: "/placeholder.svg?height=200&width=200" },
-              { name: "Monstera Deliciosa", price: "R399", image: "/placeholder.svg?height=200&width=200" },
-              { name: "Peace Lily", price: "R199", image: "/placeholder.svg?height=200&width=200" },
-              { name: "Rubber Plant", price: "R249", image: "/placeholder.svg?height=200&width=200" },
-              { name: "Aloe Vera", price: "R89", image: "/placeholder.svg?height=200&width=200" },
-              { name: "Bird of Paradise", price: "R449", image: "/placeholder.svg?height=200&width=200" },
-              { name: "Cactus Collection", price: "R129", image: "/placeholder.svg?height=200&width=200" },
+              { name: "Trees and Palms", image: "/ferns.jpg" },
+              { name: "Seedlings", image: "/seedlings.jpg" },
+              { name: "Shrubs", image: "/shrubs.jpg" },
+              { name: "Indoor plants", image: "/indoor.jpg" },
+              { name: "Pots", image: "/pots.jpg" },
+              { name: "Water features", image: "/water.jpg" },
+              { name: "Garden Ornaments", image: "/garden.jpg" },
+              { name: "Potting soil and Fertilizers", image: "/soil.jpg" },
             ].map((plant, index) => (
               <Card key={index} className="group hover:shadow-lg transition-shadow">
                 <CardContent className="p-4">
@@ -175,9 +175,8 @@ export default function Component() {
                   </div>
                   <h3 className="font-semibold text-gray-900 mb-2">{plant.name}</h3>
                   <div className="flex items-center justify-between">
-                    <span className="text-lg font-bold text-green-600">{plant.price}</span>
                     <Button size="sm" className="bg-green-600 hover:bg-green-700">
-                      Add to Cart
+                      Visit Us Now
                     </Button>
                   </div>
                 </CardContent>
