@@ -13,7 +13,7 @@ export default function Component() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="bg-white shadow-sm sticky top-0 z-50">
+      <header className="bg-white shadow-sm sticky top-0 z-50 motion-opacity-in-0 motion-preset-expand motion-blur-in-xl motion-duration-1200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
@@ -44,7 +44,7 @@ export default function Component() {
       </header>
 
       {/* Hero Section */}
-      <section id="home" className="bg-gradient-to-br from-[#0D3824] to-green-600 text-white py-20 relative overflow-hidden max-w-7xl xl:mx-auto mx-[15px] px-4 sm:px-6 lg:px-8 rounded-2xl my-5">
+      <section id="home" className="motion-delay-50 motion-blur-in-xl motion-duration-1200 motion-preset-slide-right bg-gradient-to-br from-[#0D3824] to-green-600 text-white py-20 relative overflow-hidden max-w-7xl xl:mx-auto mx-[15px] px-4 sm:px-6 lg:px-8 rounded-2xl my-5">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex gap-12 items-center">
