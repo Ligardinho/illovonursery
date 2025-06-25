@@ -14,7 +14,7 @@ import ObserverProvider from "@/components/ObserverProvider"
 export default function Component() {
   return (
     <ObserverProvider>
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white transition-all">
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50 intersect:motion-opacity-in-0 intersect:motion-preset-expand intersect:motion-blur-in-xl intersect:motion-duration-1200  ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -322,8 +322,8 @@ export default function Component() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 intersect:motion-preset-expand intersect:motion-delay-100 intersect:motion-duration-1200 intersect:motion-blur-in-xl ">What They&apos;re Saying</h2>
 
-          <div className="bg-green-50 rounded-2xl p-8 relative intersect:motion-preset-expand intersect:motion-delay-100 intersect:motion-duration-1200 intersect:motion-blur-in-xl">
-            <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8">
+          <div className="bg-green-50 rounded-2xl p-8 relative intersect:motion-preset-slide-left intersect:motion-delay-100 intersect:motion-duration-1200 intersect:motion-blur-in-xl">
+            <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8 intersect:motion-preset-expand intersect:motion-delay-100 intersect:motion-duration-1200 intersect:motion-blur-in-xl">
               <div className="relative">
                 <div className="rounded-full flex items-center justify-center">
                   <Image
@@ -387,9 +387,9 @@ export default function Component() {
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-16 " id="contact">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 intersect:motion-preset-expand intersect:motion-delay-100 intersect:motion-duration-1200 intersect:motion-blur-in-xl">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div>
+            <div className="intersect:motion-preset-expand intersect:motion-delay-0 intersect:motion-duration-1200 intersect:motion-blur-in-xl">
               <div className="flex items-center space-x-2 mb-6">
                 <img src="/logo.png" className="h-16 w-auto brightness-0 invert-100"/>
               </div>
@@ -402,7 +402,7 @@ export default function Component() {
               </a>
             </div>
 
-            <div>
+            <div className="intersect:motion-preset-expand intersect:motion-delay-100 intersect:motion-duration-1200 intersect:motion-blur-in-xl">
               <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>
@@ -428,7 +428,7 @@ export default function Component() {
               </ul>
             </div>
 
-            <div>
+            <div className="intersect:motion-preset-expand intersect:motion-delay-200 intersect:motion-duration-1200 intersect:motion-blur-in-xl">
               <h3 className="text-lg font-semibold mb-4">Services</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>
@@ -454,7 +454,7 @@ export default function Component() {
               </ul>
             </div>
 
-            <div>
+            <div className="intersect:motion-preset-expand intersect:motion-delay-300 intersect:motion-duration-1200 intersect:motion-blur-in-xl">
               <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
               <div className="space-y-3 text-gray-400">
                 <div className="flex items-center space-x-3">
@@ -473,7 +473,7 @@ export default function Component() {
             </div>
           </div>
 
-          <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+          <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 intersect:motion-preset-expand intersect:motion-delay-100 intersect:motion-duration-1200 intersect:motion-blur-in-xl">
             <p>&copy; 2025 Illovo Nursery. Designed by Prestige Sites. All rights reserved.</p>
           </div>
         </div>
