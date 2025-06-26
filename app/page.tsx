@@ -71,7 +71,7 @@ export default function Component() {
             </div>
             <div className="lg:flex hidden">
               <img src="/home.jpg" className="rounded-[128px] object-left h-[500px] w-[800px] object-cover z-10 relative"/>
-              <div className="bg-green-800 z-30 absolute rounded-2xl p-3 w-[300px] top-90 left-[45%] border-b-4 border-green-900" data-aos="fade-right" data-aos-delay="200">
+              <div className="bg-green-800 z-30 absolute rounded-2xl p-3 w-[300px] top-90 left-[45%] border-b-4 border-green-900 backdrop-blur-sm" data-aos="fade-right" data-aos-delay="200">
                 <div className="space-y-2 flex flex-col justify-center items-center">
                 <div className="flex items-center space-x-4">
                   <div className="text-2xl font-bold text-green-400">84%</div>
