@@ -87,7 +87,7 @@ export default function Component() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8 items-center intersect:motion-blur-in-xl" data-aos="fade-left">
+          <div className="grid lg:grid-cols-2 gap-8 items-center intersect:motion-blur-in-xl" data-aos="fade-right">
             <div className="space-y-8">
               <Image
                 src="/2.jpg"
@@ -126,7 +126,7 @@ export default function Component() {
       {/* Trees section */}
       <section className="py-16 bg-white" data-aos="fade-right">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-3 gap-8 items-center  fade-left intersect:motion-delay-50 intersect:motion-duration-1200 intersect:motion-blur-in-xl">
+          <div className="grid lg:grid-cols-3 gap-8 items-center">
             <div className="lg:col-span-2">
               <Image
                 src="/1.jpg"
@@ -164,10 +164,10 @@ export default function Component() {
               { name: "Seedlings", image: "/seedlings.jpg", delay: "100", direction: "fade-right"},
               { name: "Shrubs", image: "/shrubs.jpg", delay: "200", direction: "fade-right"},
               { name: "Indoor plants", image: "/indoor.jpg", delay: "300", direction: "fade-right"},
-              { name: "Pots", image: "/pots.jpg", delay: "400", direction: "fade-left"},
-              { name: "Water features", image: "/water.jpg", delay: "500", direction: "fade-left"},
-              { name: "Garden Ornaments", image: "/garden.jpg", delay: "600", direction: "fade-left"},
-              { name: "Potting soil and Fertilizers", image: "/soil.jpg", delay: "700", direction: "fade-left"},
+              { name: "Pots", image: "/pots.jpg", delay: "400", direction: "fade-right"},
+              { name: "Water features", image: "/water.jpg", delay: "500", direction: "fade-right"},
+              { name: "Garden Ornaments", image: "/garden.jpg", delay: "600", direction: "fade-right"},
+              { name: "Potting soil and Fertilizers", image: "/soil.jpg", delay: "700", direction: "fade-right"},
             ].map((plant, index) => (
               <Card key={index} className={`group hover:shadow-lg transition-shadow`} data-aos={plant.direction} data-aos-delay={plant.delay}>
                 <CardContent className="p-4">
@@ -199,7 +199,7 @@ export default function Component() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex lg:flex-row flex-col items-center justify-center gap-8">
-            <div className="bg-green-800 text-white p-12 rounded-2xl max-w-7xl mx-auto lg:mx-0 lg:w-[400px] lg:h-[440px]" data-aos="fade-right">
+            <div className="bg-green-800 text-white p-12 rounded-2xl max-w-7xl mx-auto lg:mx-0 lg:w-[400px] lg:h-[440px]" data-aos=" fade-right">
               <h3 className="text-3xl font-bold mb-6">FRAGRANT <br/>FLOWER SCENT</h3>
               <p className="text-green-100 mb-8 text-lg">
                 Experience the enchanting world of <br/>fragrant flowers that will fill your <br/>garden with delightful scents<br/>
@@ -224,7 +224,7 @@ export default function Component() {
               </div>
             </div>
 
-            <div data-aos="fade-left" className="bg-green-800 text-white p-5 rounded-2xl xl:w-[850px] xl:grid hidden xl:grid-cols-2 items-center gap-6 xl:h-[440px] lg:h-[520px] max-w-full">
+            <div data-aos="fade-right" className="bg-green-800 text-white p-5 rounded-2xl xl:w-[850px] xl:grid hidden xl:grid-cols-2 items-center gap-6 xl:h-[440px] lg:h-[520px] max-w-full">
               <Image
                 src="/6.jpg"
                 alt="Fragrant flowers"
@@ -320,7 +320,7 @@ export default function Component() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-12" data-aos="fade-zoom-in">What They&apos;re Saying</h2>
 
-          <div className="bg-green-50 rounded-2xl p-8 relative" data-aos="fade-left">
+          <div className="bg-green-50 rounded-2xl p-8 relative" data-aos="fade-right">
             <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8" data-aos="fade-zoom-in">
               <div className="relative">
                 <div className="rounded-full flex items-center justify-center">
@@ -360,7 +360,7 @@ export default function Component() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <h2 className="text-4xl font-bold mb-8" data-aos="fade-zoom-in">Building Your Dream Garden</h2>
-            <div className="relative inline-block" data-aos="fade-right">
+            <div className="relative inline-block" data-aos=" fade-right">
               <Image
                 src="/4.jpg"
                 alt="Garden video thumbnail"
