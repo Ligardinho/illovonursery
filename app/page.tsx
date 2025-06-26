@@ -8,6 +8,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import { LuBeer, LuCat } from "react-icons/lu"
 
 
 
@@ -33,7 +34,7 @@ export default function Component() {
                 Products
               </a>
               <a href="#services" className="text-gray-700 hover:text-green-600 font-medium">
-                Services
+                Marketplace
               </a>
               <a href="https://illovonursery.co.za/terrace/" target="_ " className="text-gray-700 hover:text-green-600 font-medium">
                 The Terrace
@@ -50,7 +51,7 @@ export default function Component() {
       <section id="home" data-aos="fade-right" className="bg-gradient-to-br from-[#0D3824] to-green-600 text-white py-20 relative overflow-hidden max-w-7xl xl:mx-auto mx-[15px] px-4 sm:px-6 lg:px-8 rounded-2xl my-5 shadow-xl">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="flex flex-row gap-20 items-center relative z-10">
+          <div className="grid lg:grid-cols-2 gap-20 items-center relative z-10">
             <div>
               <h1 className="text-4xl md:text-5xl font-semibold leading-tight mb-6">
                 Transform Your Garden
@@ -58,7 +59,7 @@ export default function Component() {
               </h1>
               <p className="md:text-lg text-lg text-green-100 mb-8 leading-relaxed">
                 Discover premium plants, expert landscaping services, and everything you need to create your perfect
-                garden oasis at Illovo Nursery.
+                garden oasis at Illovo Nursery. Discover a one-of-a-kind destination blending lush greenery, local flavor, and creative energy. Whether you&apos;re here to explore our vibrant plant nursery, unwind in our beer garden, or browse handmade treasures, there&apos;s something for everyone
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="https://maps.app.goo.gl/38eySRVVsQuhjSRE9" target="_ ">
@@ -70,7 +71,7 @@ export default function Component() {
             </div>
             <div className="lg:flex hidden">
               <img src="/home.jpg" className="rounded-[128px] object-left h-[500px] w-[800px] object-cover z-10 relative"/>
-              <div className="bg-green-800 z-30 absolute rounded-2xl p-3 w-[300px] top-90 left-1/2 border-b-4 border-green-900" data-aos="fade-right" data-aos-delay="200">
+              <div className="bg-green-800 z-30 absolute rounded-2xl p-3 w-[300px] top-90 left-[45%] border-b-4 border-green-900" data-aos="fade-right" data-aos-delay="200">
                 <div className="space-y-2 flex flex-col justify-center items-center">
                 <div className="flex items-center space-x-4">
                   <div className="text-2xl font-bold text-green-400">84%</div>
@@ -137,7 +138,7 @@ export default function Component() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  <span>Ongoing maintenance and support</span>
+                  <span>Ongoing maintenance and support products</span>
                 </div>
               </div>
             </div>
@@ -151,20 +152,21 @@ export default function Component() {
           <div className="grid lg:grid-cols-3 gap-8 items-center">
             <div className="lg:col-span-2">
               <Image
-                src="/1.jpg"
+                src="/tranquil.jpg"
                 alt="Beautiful trees"
                 width={600}
                 height={400}
-                className="rounded-2xl shadow-lg w-[800px] lg:h-[308px] h-[370px] object-cover"
+                className="rounded-2xl shadow-lg w-[800px] lg:h-[320px] h-[370px] object-cover object-bottom"
               />
             </div>
-            <div className="bg-green-800 text-white p-8 rounded-2xl max-h-[375px] lg:h-[308px] xl:h-[308px] flex flex-col justify-center">
-              <h3 className="text-3xl font-bold mb-4">Trees are the lungs of the world</h3>
+            <div className="bg-green-800 text-white p-8 rounded-2xl max-h-[375px] lg:h-[320px] flex flex-col justify-center">
+              <h3 className="text-3xl font-bold mb-4">Tranquil is our middle name</h3>
               <p className="text-green-100 mb-6">
-                Discover our extensive collection of indigenous and exotic trees that will transform your landscape
-                while contributing to a healthier environment.
+                Visitors return not only to shop our beautiful plants and accessories but also to attend our unique Terrace restaurant, Beer Garden, weekend Craft Market, Pet Shop, Book Shop, weekend Art Gallery and much more. 
               </p>
-              <Button className="bg-green-500 hover:bg-green-400 text-white w-fit border-b-3 border-green-600">Explore Trees</Button>
+              <a href="#services">
+                <Button className="bg-green-500 hover:bg-green-400 text-white w-fit border-b-3 border-green-600">See More</Button>
+              </a>
             </div>
           </div>
         </div>
@@ -279,41 +281,41 @@ export default function Component() {
           <div className="text-center mb-16" data-aos="fade-zoom-in">
             <div className="flex items-center justify-center mb-4">
               <TreePine className="h-6 w-6 text-green-600 mr-2" />
-              <span className="text-green-600 font-semibold">Our Services</span>
+              <span className="text-green-600 font-semibold">Our Marketplace</span>
             </div>
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Complete gardening and landscaping services available for your outdoor space
+              Discover Our Marketplace: A Curated Mix of Plants, Crafts, Bites & More
             </h2>
           </div>
 
           <div className="space-y-6">
             {[
               {
-                title: "Garden Design",
+                title: "Nursery & Garden Center",
                 description:
-                  "Custom garden design services tailored to your space, style, and budget. Our expert designers will create a beautiful and functional outdoor space.",
+                  "From houseplants to landscaping essentials, find the perfect greenery to bring your space to life. Our experts are here to help your garden thrive.",
                 icon: <Flower className="h-8 w-8" />,
                 delay: "0",
               },
               {
-                title: "Landscape Installation",
+                title: "Craft Market",
                 description:
-                  "Our expert landscapers will bring your garden design to life, meticulously planting each tree, shrub, and flower to create the garden of your dreams, tailored to your unique outdoor space.",
+                  "Support local artisans! Discover handmade goods, unique gifts, and seasonal finds in our ever-changing market.",
                 icon: <Shovel className="h-8 w-8" />,
                 delay: "100",
               },
               {
-                title: "Hardscaping",
+                title: "Pet Shop",
                 description:
-                  "Professional hardscaping services including patios, walkways, retaining walls, and water features to complement your garden design.",
-                icon: <TreePine className="h-8 w-8" />,
+                  "Spoil your furry (or feathery, or scaly) friends with premium pet supplies, toys, and treats. Pet-friendly vibes always!",
+                icon: <LuCat className="h-8 w-8 font-semibold" />,
                 delay: "200",
               },
               {
-                title: "Maintenance",
+                title: "Beer Garden",
                 description:
-                  "Regular garden maintenance services to keep your outdoor space looking its best year-round, including pruning, fertilizing, and pest control.",
-                icon: <Leaf className="h-8 w-8" />,
+                  "Kick back under the trees with craft beers, local ciders, and refreshing drinks. The perfect spot to relax after browsing the plants!",
+                icon: <LuBeer className="h-8 w-8" />,
                 delay: "300",
               },
             ].map((service, index) => (
@@ -347,23 +349,21 @@ export default function Component() {
               <div className="relative">
                 <div className="rounded-full flex items-center justify-center">
                   <Image
-                    src="/profile.jpg"
+                    src="/a.png"
                     alt="Customer testimonial"
                     width={120}
                     height={120}
-                    className="rounded-full object-cover w-32 h-32"
+                    className="rounded-full object-cover w-36 h-36"
                   />
                 </div>
               </div>
               <div className="flex-1 text-left">
-                <p className="text-lg text-gray-700 mb-4 italic">
-                  &quot;Illovo Nursery transformed our backyard into a stunning garden paradise. Their expertise, quality
-                  plants, and exceptional service exceeded all our expectations. We couldn&apos;t be happier with the
-                  results!&quot;
+                <p className="text-normal text-gray-700 mb-4 italic">
+                  &quot;Wonderful venue for a breakaway breakfast, lunch or brunch. Great service and food so delicious you want to stay for more. The nursery has everything from plants, pets and patio or garden furniture. Experience overall here was wonderfully refreshing for a Monday morning. I will urge anyone taking their significant other on a quiet &quot;date day&quot; to try this place at least once. You will be glad you did!&quot;
                 </p>
                 <div>
-                  <div className="font-semibold text-gray-900">Alexis Carrington</div>
-                  <div className="text-gray-600">Homeowner, Illovo</div>
+                  <div className="font-semibold text-gray-900">Andre Warden</div>
+                  <div className="text-gray-600">Local Guide, eManzimtoti</div>
                 </div>
                 <div className="flex items-center mt-2">
                   {[...Array(5)].map((_, i) => (
@@ -442,7 +442,7 @@ export default function Component() {
                 </li>
                 <li>
                   <a href="#services" className="hover:text-white">
-                    Services
+                    Marketplace
                   </a>
                 </li>
                 <li>
@@ -458,22 +458,22 @@ export default function Component() {
               <ul className="space-y-2 text-gray-400">
                 <li>
                   <a href="#services" className="hover:text-white">
-                    Garden Design
+                    Nursery & Garden Center
                   </a>
                 </li>
                 <li>
                   <a href="#services" className="hover:text-white">
-                    Landscaping
+                    Craft Market
                   </a>
                 </li>
                 <li>
                   <a href="#services" className="hover:text-white">
-                    Plant Installation
+                    Pet Shop
                   </a>
                 </li>
                 <li>
                   <a href="#services" className="hover:text-white">
-                    Maintenance
+                    Beer Garden
                   </a>
                 </li>
               </ul>
@@ -492,7 +492,7 @@ export default function Component() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-green-500" />
-                  <span>info@illovo-nursery.co.za</span>
+                  <span>illovonursery@telkomsa.net</span>
                 </div>
               </div>
             </div>
