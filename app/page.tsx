@@ -199,7 +199,7 @@ export default function Component() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex lg:flex-row flex-col items-center justify-center gap-8">
-            <div className="bg-green-800 text-white p-12 rounded-2xl max-w-7xl mx-auto lg:mx-0 lg:w-[400px] lg:h-[440px]" data-aos=" fade-right">
+            <div className="bg-green-800 text-white p-12 rounded-2xl max-w-7xl mx-auto lg:mx-0 lg:w-[400px] lg:h-[440px]" data-aos="fade-right">
               <h3 className="text-3xl font-bold mb-6">FRAGRANT <br/>FLOWER SCENT</h3>
               <p className="text-green-100 mb-8 text-lg">
                 Experience the enchanting world of <br/>fragrant flowers that will fill your <br/>garden with delightful scents<br/>
