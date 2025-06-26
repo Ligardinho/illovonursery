@@ -362,7 +362,7 @@ export default function Component() {
                   results!&quot;
                 </p>
                 <div>
-                  <div className="font-semibold text-gray-900">Alexia Carrington</div>
+                  <div className="font-semibold text-gray-900">Alexis Carrington</div>
                   <div className="text-gray-600">Homeowner, Illovo</div>
                 </div>
                 <div className="flex items-center mt-2">
