@@ -49,14 +49,14 @@ export default function Component() {
       {/* Hero Section */}
       <section id="home" data-aos="fade-right" className="bg-gradient-to-br from-[#0D3824] to-green-600 text-white py-20 relative overflow-hidden max-w-7xl xl:mx-auto mx-[15px] px-4 sm:px-6 lg:px-8 rounded-2xl my-5">
         <div className="absolute inset-0 bg-black/10"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="flex gap-12 items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="flex flex-row gap-20 items-center relative z-10">
             <div>
-              <h1 className="text-4xl md:text-6xl font-semibold leading-tight mb-6">
+              <h1 className="text-4xl md:text-5xl font-semibold leading-tight mb-6">
                 Transform Your Garden
                 <span className="block">Dream into Reality</span>
               </h1>
-              <p className="md:text-xl text-lg text-green-100 mb-8 leading-relaxed">
+              <p className="md:text-lg text-lg text-green-100 mb-8 leading-relaxed">
                 Discover premium plants, expert landscaping services, and everything you need to create your perfect
                 garden oasis at Illovo Nursery.
               </p>
@@ -67,6 +67,28 @@ export default function Component() {
                 </Button>
                 </a>
               </div>
+            </div>
+            <div className="lg:flex hidden">
+              <img src="/home.jpg" className="rounded-[128px] object-left h-[500px] w-[800px] object-cover z-10 relative"/>
+              <div className="bg-green-800 z-30 absolute rounded-2xl p-3 w-[300px] top-90 left-1/2 border-b-4 border-green-900">
+                <div className="space-y-2 flex flex-col justify-center items-center">
+                <div className="flex items-center space-x-4">
+                  <div className="text-2xl font-bold text-green-400">84%</div>
+                  <div>
+                    <div className="font-semibold text-sm">Customer Satisfaction</div>
+                    <div className="text-green-200 text-xs">Based on 1,100+ reviews</div>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-1">
+                  <Star className="h-3 w-3 text-yellow-400 fill-current" />
+                  <Star className="h-3 w-3 text-yellow-400 fill-current" />
+                  <Star className="h-3 w-3 text-yellow-400 fill-current" />
+                  <Star className="h-3 w-3 text-yellow-400 fill-current" />
+                  <Star className="h-3 w-3 text-white fill-current" />
+                  <span className="text-green-200 ml-2">Excellent Rating</span>
+                </div>
+              </div>
+            </div>
             </div>
           </div>
         </div>
