@@ -9,14 +9,18 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 
-import ObserverProvider from "@/components/ObserverProvider"
+
 
 export default function Component() {
   return (
-    <ObserverProvider>
     <div className="min-h-screen bg-white transition-all">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
       {/* Header */}
-      <header className="bg-white shadow-sm sticky top-0 z-50 intersect:motion-opacity-in-0 intersect:motion-preset-expand intersect:motion-blur-in-xl intersect:motion-duration-1200  ">
+      <header
+        className="bg-white shadow-sm sticky top-0 z-50 intersect:motion-opacity-in-0 intersect:motion-preset-expand intersect:motion-blur-in-xl intersect:motion-duration-1200  ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
@@ -47,9 +51,7 @@ export default function Component() {
       </header>
 
       {/* Hero Section */}
-      <section id="home" className="intersect:motion-delay-50 intersect:motion-duration-1200 intersect:motion-preset-slide-right 
-       bg-gradient-to-br from-[#0D3824] to-green-600 text-white py-20 relative overflow-hidden max-w-7xl xl:mx-auto 
-      mx-[15px] px-4 sm:px-6 lg:px-8 rounded-2xl my-5">
+      <section id="home" data-aos="fade-right" className="bg-gradient-to-br from-[#0D3824] to-green-600 text-white py-20 relative overflow-hidden max-w-7xl xl:mx-auto mx-[15px] px-4 sm:px-6 lg:px-8 rounded-2xl my-5">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex gap-12 items-center">
@@ -77,7 +79,7 @@ export default function Component() {
       {/* Create from a small garden section */}
       <section className="py-20 bg-gray-50" id="about">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 intersect:motion-preset-expand intersect:motion-delay-50 intersect:motion-duration-1200 intersect:motion-blur-in-xl">
+          <div className="text-center mb-16" data-aos="fade-zoom-in">
             <div className="flex items-center justify-center mb-4">
               <Leaf className="h-6 w-6 text-green-600 mr-2" />
               <span className="text-green-600 font-semibold">Illovo Nursery</span>
@@ -89,7 +91,7 @@ export default function Component() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8 items-center intersect:motion-preset-slide-right intersect:motion-delay-50 intersect:motion-duration-1200 intersect:motion-blur-in-xl">
+          <div className="grid lg:grid-cols-2 gap-8 items-center intersect:motion-blur-in-xl" data-aos="fade-left">
             <div className="space-y-8">
               <Image
                 src="/2.jpg"
@@ -126,9 +128,9 @@ export default function Component() {
       </section>
 
       {/* Trees section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white" data-aos="fade-right">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-3 gap-8 items-center intersect:motion-preset-slide-left intersect:motion-delay-50 intersect:motion-duration-1200 intersect:motion-blur-in-xl">
+          <div className="grid lg:grid-cols-3 gap-8 items-center  fade-left intersect:motion-delay-50 intersect:motion-duration-1200 intersect:motion-blur-in-xl">
             <div className="lg:col-span-2">
               <Image
                 src="/1.jpg"
@@ -153,7 +155,7 @@ export default function Component() {
       {/* New Arrivals */}
       <section className="py-20 bg-gray-50" id="products">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 intersect:motion-preset-expand intersect:motion-delay-100 intersect:motion-duration-1200 intersect:motion-blur-in-xl">
+          <div data-aos="fade-zoom-in" className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">What We Offer</h2>
             <p className="text-xl text-gray-600">
               Our garden experts have curated a collection of products, fresh from the nursery just for you.
@@ -162,16 +164,16 @@ export default function Component() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { name: "Trees and Palms", image: "/ferns.jpg", delay: "motion-delay-0" , direction: "intersect:motion-preset-slide-right"},
-              { name: "Seedlings", image: "/seedlings.jpg", delay: "motion-delay-100", direction: "intersect:motion-preset-slide-right"},
-              { name: "Shrubs", image: "/shrubs.jpg", delay: "motion-delay-200", direction: "intersect:motion-preset-slide-right"},
-              { name: "Indoor plants", image: "/indoor.jpg", delay: "motion-delay-300", direction: "intersect:motion-preset-slide-right"},
-              { name: "Pots", image: "/pots.jpg", delay: "motion-delay-400", direction: "intersect:motion-preset-slide-left"},
-              { name: "Water features", image: "/water.jpg", delay: "motion-delay-500", direction: "intersect:motion-preset-slide-left"},
-              { name: "Garden Ornaments", image: "/garden.jpg", delay: "motion-delay-600", direction: "intersect:motion-preset-slide-left"},
-              { name: "Potting soil and Fertilizers", image: "/soil.jpg", delay: "motion-delay-700", direction: "intersect:motion-preset-slide-left"},
+              { name: "Trees and Palms", image: "/ferns.jpg", delay: "0" , direction: "fade-right"},
+              { name: "Seedlings", image: "/seedlings.jpg", delay: "100", direction: "fade-right"},
+              { name: "Shrubs", image: "/shrubs.jpg", delay: "200", direction: "fade-right"},
+              { name: "Indoor plants", image: "/indoor.jpg", delay: "300", direction: "fade-right"},
+              { name: "Pots", image: "/pots.jpg", delay: "400", direction: "fade-left"},
+              { name: "Water features", image: "/water.jpg", delay: "500", direction: "fade-left"},
+              { name: "Garden Ornaments", image: "/garden.jpg", delay: "600", direction: "fade-left"},
+              { name: "Potting soil and Fertilizers", image: "/soil.jpg", delay: "700", direction: "fade-left"},
             ].map((plant, index) => (
-              <Card key={index} className={`${plant.delay} group hover:shadow-lg transition-shadow ${plant.direction} intersect:motion-blur-in-xl  `}>
+              <Card key={index} className={`group hover:shadow-lg transition-shadow`} data-aos={plant.direction} data-aos-delay={plant.delay}>
                 <CardContent className="p-4">
                   <div className="aspect-square mb-4 overflow-hidden rounded-lg bg-gray-100">
                     <Image
@@ -201,7 +203,7 @@ export default function Component() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex lg:flex-row flex-col items-center justify-center gap-8">
-            <div className="intersect:motion-preset-slide-right intersect:motion-preset-blur-right-xl motion-delay-100   bg-green-800 text-white p-12 rounded-2xl max-w-7xl mx-auto lg:mx-0 lg:w-[400px] lg:h-[440px]">
+            <div className="bg-green-800 text-white p-12 rounded-2xl max-w-7xl mx-auto lg:mx-0 lg:w-[400px] lg:h-[440px]" data-aos="fade-right">
               <h3 className="text-3xl font-bold mb-6">FRAGRANT <br/>FLOWER SCENT</h3>
               <p className="text-green-100 mb-8 text-lg">
                 Experience the enchanting world of <br/>fragrant flowers that will fill your <br/>garden with delightful scents<br/>
@@ -226,7 +228,7 @@ export default function Component() {
               </div>
             </div>
 
-            <div className="intersect:motion-preset-slide-left intersect:motion-preset-blur-left-xl motion-delay-100   bg-green-800 text-white p-5 rounded-2xl xl:w-[850px] xl:grid hidden xl:grid-cols-2 items-center gap-6 xl:h-[440px] lg:h-[520px] max-w-full">
+            <div data-aos="fade-left" className="bg-green-800 text-white p-5 rounded-2xl xl:w-[850px] xl:grid hidden xl:grid-cols-2 items-center gap-6 xl:h-[440px] lg:h-[520px] max-w-full">
               <Image
                 src="/6.jpg"
                 alt="Fragrant flowers"
@@ -256,7 +258,7 @@ export default function Component() {
       {/* Our Services */}
       <section className="py-20 bg-gray-50" id="services">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 intersect:motion-preset-expand intersect:motion-delay-100 intersect:motion-duration-1200 intersect:motion-blur-in-xl">
+          <div className="text-center mb-16" data-aos="fade-zoom-in">
             <div className="flex items-center justify-center mb-4">
               <TreePine className="h-6 w-6 text-green-600 mr-2" />
               <span className="text-green-600 font-semibold">Our Services</span>
@@ -273,31 +275,31 @@ export default function Component() {
                 description:
                   "Custom garden design services tailored to your space, style, and budget. Our expert designers will create a beautiful and functional outdoor space.",
                 icon: <Flower className="h-8 w-8" />,
-                delay: "motion-delay-0",
+                delay: "0",
               },
               {
                 title: "Landscape Installation",
                 description:
                   "Our expert landscapers will bring your garden design to life, meticulously planting each tree, shrub, and flower to create the garden of your dreams, tailored to your unique outdoor space.",
                 icon: <Shovel className="h-8 w-8" />,
-                delay: "motion-delay-100",
+                delay: "100",
               },
               {
                 title: "Hardscaping",
                 description:
                   "Professional hardscaping services including patios, walkways, retaining walls, and water features to complement your garden design.",
                 icon: <TreePine className="h-8 w-8" />,
-                delay: "motion-delay-200",
+                delay: "200",
               },
               {
                 title: "Maintenance",
                 description:
                   "Regular garden maintenance services to keep your outdoor space looking its best year-round, including pruning, fertilizing, and pest control.",
                 icon: <Leaf className="h-8 w-8" />,
-                delay: "motion-delay-300",
+                delay: "300",
               },
             ].map((service, index) => (
-              <div key={index} className={`${service.delay} intersect:motion-preset-slide-up motion-duration-500   intersect:motion-preset-blur-up-lg p-6 hover:shadow-lg transition-shadow bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm max-w-full`}>
+              <div key={index} className={`p-6 hover:shadow-lg transition-shadow bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm max-w-full`} data-aos="fade-up" data-aos-delay={service.delay}>
                 <Accordion type="single" collapsible className="flex items-start space-x-4 max-w-full">
                   <AccordionItem value="item-1" className="min-w-full">
                     <AccordionTrigger className="flex flex-row justify-between items-center max-w-full">
@@ -320,10 +322,10 @@ export default function Component() {
       {/* Testimonial */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 intersect:motion-preset-expand intersect:motion-delay-100 intersect:motion-duration-1200 intersect:motion-blur-in-xl ">What They&apos;re Saying</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-12" data-aos="fade-zoom-in">What They&apos;re Saying</h2>
 
-          <div className="bg-green-50 rounded-2xl p-8 relative intersect:motion-preset-slide-left intersect:motion-delay-100 intersect:motion-duration-1200 intersect:motion-blur-in-xl">
-            <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8 intersect:motion-preset-expand intersect:motion-delay-100 intersect:motion-duration-1200 intersect:motion-blur-in-xl">
+          <div className="bg-green-50 rounded-2xl p-8 relative" data-aos="fade-left">
+            <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8" data-aos="fade-zoom-in">
               <div className="relative">
                 <div className="rounded-full flex items-center justify-center">
                   <Image
@@ -359,10 +361,10 @@ export default function Component() {
       {/* Video Section */}
       <section className="py-20 bg-green-800 text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-black/20"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 intersect:motion-preset-slide-right intersect:motion-delay-100 intersect:motion-duration-1200 intersect:motion-blur-in-xl">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
-            <h2 className="text-4xl font-bold mb-8 ">Building Your Dream Garden</h2>
-            <div className="relative inline-block">
+            <h2 className="text-4xl font-bold mb-8" data-aos="fade-zoom-in">Building Your Dream Garden</h2>
+            <div className="relative inline-block" data-aos="fade-right">
               <Image
                 src="/4.jpg"
                 alt="Garden video thumbnail"
@@ -377,7 +379,7 @@ export default function Component() {
                 <Play className="h-6 w-6 text-white ml-1" />
               </Button>
             </div>
-            <p className="text-xl text-green-100 mt-8 max-w-2xl mx-auto">
+            <p className="text-xl text-green-100 mt-8 max-w-2xl mx-auto" data-aos="fade-zoom-in">
               Watch how we transform ordinary spaces into extraordinary gardens. See our process from design to
               completion.
             </p>
@@ -484,6 +486,5 @@ export default function Component() {
         </div>
       </footer>
     </div>
-    </ObserverProvider>
   )
 }
