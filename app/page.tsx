@@ -387,8 +387,8 @@ export default function Component() {
       <footer className="bg-gray-900 text-white py-16 " id="contact">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="intersect:motion-preset-expand intersect:motion-delay-0 intersect:motion-duration-1200 intersect:motion-blur-in-xl">
-              <div className="flex items-center space-x-2 mb-6 intersect:motion-preset-expand intersect:motion-delay-100 intersect:motion-duration-1200 intersect:motion-blur-in-xl">
+            <div className="" data-aos="fade-zoom-in">
+              <div className="flex items-center space-x-2 mb-6">
                 <img src="/logo.png" className="h-16 w-auto brightness-0 invert-100 "/>
               </div>
               <p className="text-gray-400 mb-6">
@@ -400,7 +400,7 @@ export default function Component() {
               </a>
             </div>
 
-            <div className="intersect:motion-preset-expand intersect:motion-delay-100 intersect:motion-duration-1200 intersect:motion-blur-in-xl">
+            <div className="" data-aos="fade-zoom-in">
               <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>
@@ -431,7 +431,7 @@ export default function Component() {
               </ul>
             </div>
 
-            <div className="intersect:motion-preset-expand intersect:motion-delay-200 intersect:motion-duration-1200 intersect:motion-blur-in-xl">
+            <div className="" data-aos="fade-zoom-in">
               <h3 className="text-lg font-semibold mb-4">Services</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>
@@ -457,7 +457,7 @@ export default function Component() {
               </ul>
             </div>
 
-            <div className="intersect:motion-preset-expand intersect:motion-delay-300 intersect:motion-duration-1200 intersect:motion-blur-in-xl">
+            <div className="" data-aos="fade-zoom-in">
               <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
               <div className="space-y-3 text-gray-400">
                 <div className="flex items-center space-x-3">
@@ -476,7 +476,7 @@ export default function Component() {
             </div>
           </div>
 
-          <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 intersect:motion-preset-expand intersect:motion-delay-100 intersect:motion-duration-1200 intersect:motion-blur-in-xl">
+          <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400" data-aos="fade-zoom-in">
             <p>&copy; 2025 Illovo Nursery. Designed by Prestige Sites. All rights reserved.</p>
           </div>
         </div>

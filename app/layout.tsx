@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={outfit.className}
+        className={`${outfit.className} bg-gray-900`}
         suppressHydrationWarning
       >
         <AOSInitializer />
