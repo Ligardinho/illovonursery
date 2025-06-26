@@ -87,7 +87,7 @@ export default function Component() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8 items-center intersect:motion-blur-in-xl" data-aos="fade-right">
+          <div className="grid lg:grid-cols-2 gap-8 items-center" data-aos="fade-zoom-in">
             <div className="space-y-8">
               <Image
                 src="/2.jpg"
@@ -124,7 +124,7 @@ export default function Component() {
       </section>
 
       {/* Trees section */}
-      <section className="py-16 bg-white" data-aos="fade-right">
+      <section className="py-16 bg-white" data-aos="fade-zoom-in">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-8 items-center">
             <div className="lg:col-span-2">
@@ -224,7 +224,7 @@ export default function Component() {
               </div>
             </div>
 
-            <div data-aos="fade-right" className="bg-green-800 text-white p-5 rounded-2xl xl:w-[850px] xl:grid hidden xl:grid-cols-2 items-center gap-6 xl:h-[440px] lg:h-[520px] max-w-full">
+            <div data-aos="fade-left" className="bg-green-800 text-white p-5 rounded-2xl xl:w-[850px] xl:grid hidden xl:grid-cols-2 items-center gap-6 xl:h-[440px] lg:h-[520px] max-w-full">
               <Image
                 src="/6.jpg"
                 alt="Fragrant flowers"
@@ -360,7 +360,7 @@ export default function Component() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <h2 className="text-4xl font-bold mb-8" data-aos="fade-zoom-in">Building Your Dream Garden</h2>
-            <div className="relative inline-block" data-aos=" fade-right">
+            <div className="relative inline-block" data-aos="fade-left">
               <Image
                 src="/4.jpg"
                 alt="Garden video thumbnail"
