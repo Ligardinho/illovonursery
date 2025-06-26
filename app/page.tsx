@@ -40,14 +40,14 @@ export default function Component() {
               </a>
             </nav>
             <a href="#contact">
-              <Button className="bg-green-600 hover:bg-green-700 rounded-full px-7 py-3">Contact</Button>
+              <Button className="bg-green-600 hover:bg-green-700 rounded-lg px-7 py-3 border-b-3 border-green-700">Contact</Button>
             </a>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section id="home" data-aos="fade-right" className="bg-gradient-to-br from-[#0D3824] to-green-600 text-white py-20 relative overflow-hidden max-w-7xl xl:mx-auto mx-[15px] px-4 sm:px-6 lg:px-8 rounded-2xl my-5">
+      <section id="home" data-aos="fade-right" className="bg-gradient-to-br from-[#0D3824] to-green-600 text-white py-20 relative overflow-hidden max-w-7xl xl:mx-auto mx-[15px] px-4 sm:px-6 lg:px-8 rounded-2xl my-5 shadow-xl">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="flex flex-row gap-20 items-center relative z-10">
@@ -62,7 +62,7 @@ export default function Component() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="https://maps.app.goo.gl/38eySRVVsQuhjSRE9" target="_ ">
-                <Button className="bg-green-500 hover:bg-green-400 font-medium text-white md:px-10 py-6 md:text-lg text-sm">
+                <Button className="bg-green-500 hover:bg-green-400 font-medium text-white md:px-10 py-6 md:text-lg text-sm border-b-3 border-green-600">
                   Visit Us Now
                 </Button>
                 </a>
@@ -164,7 +164,7 @@ export default function Component() {
                 Discover our extensive collection of indigenous and exotic trees that will transform your landscape
                 while contributing to a healthier environment.
               </p>
-              <Button className="bg-green-500 hover:bg-green-400 text-white w-fit">Explore Trees</Button>
+              <Button className="bg-green-500 hover:bg-green-400 text-white w-fit border-b-3 border-green-600">Explore Trees</Button>
             </div>
           </div>
         </div>
@@ -205,7 +205,7 @@ export default function Component() {
                   <h3 className="font-semibold text-gray-900 mb-2">{plant.name}</h3>
                   <div className="flex items-center justify-between">
                     <a href="https://maps.app.goo.gl/38eySRVVsQuhjSRE9" target="_ " >
-                      <Button size="sm" className="bg-green-600 hover:bg-green-700">
+                      <Button size="sm" className="bg-green-600 hover:bg-green-700 border-b-3 border-green-700">
                         Visit Us Now
                       </Button>
                     </a>
@@ -221,7 +221,7 @@ export default function Component() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex lg:flex-row flex-col items-center justify-center gap-8">
-            <div className="bg-green-800 text-white p-12 rounded-2xl max-w-7xl mx-auto lg:mx-0 lg:w-[400px] lg:h-[440px]" data-aos="fade-right">
+            <div className="bg-green-800 text-white p-12 rounded-2xl max-w-7xl mx-auto lg:mx-0 lg:w-[400px] lg:h-[440px] shadow-xl" data-aos="fade-right">
               <h3 className="text-3xl font-bold mb-6">FRAGRANT <br/>FLOWER SCENT</h3>
               <p className="text-green-100 mb-8 text-lg">
                 Experience the enchanting world of <br/>fragrant flowers that will fill your <br/>garden with delightful scents<br/>
@@ -246,7 +246,7 @@ export default function Component() {
               </div>
             </div>
 
-            <div data-aos="fade-left" className="bg-green-800 text-white p-5 rounded-2xl xl:w-[850px] xl:grid hidden xl:grid-cols-2 items-center gap-6 xl:h-[440px] lg:h-[520px] max-w-full">
+            <div data-aos="fade-left" className="bg-green-800 text-white shadow-xl p-5 rounded-2xl xl:w-[850px] xl:grid hidden xl:grid-cols-2 items-center gap-6 xl:h-[440px] lg:h-[520px] max-w-full">
               <Image
                 src="/6.jpg"
                 alt="Fragrant flowers"
@@ -342,7 +342,7 @@ export default function Component() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-12" data-aos="fade-zoom-in">What They&apos;re Saying</h2>
 
-          <div className="bg-green-50 rounded-2xl p-8 relative" data-aos="fade-right">
+          <div className="bg-green-50 rounded-2xl p-8 relative shadow-lg" data-aos="fade-right">
             <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8" data-aos="fade-zoom-in">
               <div className="relative">
                 <div className="rounded-full flex items-center justify-center">
@@ -388,7 +388,7 @@ export default function Component() {
                 alt="Garden video thumbnail"
                 width={600}
                 height={400}
-                className="rounded-lg shadow-lg object-cover h-[400px] w-[600px]"
+                className="rounded-lg shadow-xl object-cover h-[400px] w-[600px]"
               />
               <Button
                 size="lg"
@@ -418,7 +418,7 @@ export default function Component() {
                 home.
               </p>
               <a href="https://maps.app.goo.gl/38eySRVVsQuhjSRE9" target="_ ">
-                  <Button className="bg-green-600 hover:bg-green-700">Visit Our Nursery</Button>
+                  <Button className="bg-green-600 hover:bg-green-700 border-b-3 border-green-800">Visit Our Nursery</Button>
               </a>
             </div>
 
