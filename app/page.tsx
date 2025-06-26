@@ -14,10 +14,6 @@ import {
 export default function Component() {
   return (
     <div className="min-h-screen bg-white transition-all">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-          AOS.init();
-        </script>
       {/* Header */}
       <header
         className="bg-white shadow-sm sticky top-0 z-50 intersect:motion-opacity-in-0 intersect:motion-preset-expand intersect:motion-blur-in-xl intersect:motion-duration-1200  ">
