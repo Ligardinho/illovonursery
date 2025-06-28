@@ -41,7 +41,7 @@ export default function Component() {
               </a>
             </nav>
             <a href="#contact">
-              <Button className="bg-green-600 hover:bg-green-700 rounded-lg px-7 py-3 border-b-3 border-green-700">Contact</Button>
+              <Button className="bg-green-600 hover:bg-green-700 rounded-lg px-7 py-3 border-b-3 border-green-700 font-semibold">Contact</Button>
             </a>
           </div>
         </div>
@@ -63,7 +63,7 @@ export default function Component() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="https://maps.app.goo.gl/38eySRVVsQuhjSRE9" target="_ ">
-                <Button className="bg-green-500 hover:bg-green-400 font-medium text-white md:px-10 py-6 md:text-lg text-sm border-b-3 border-green-600">
+                <Button className="bg-green-500 hover:bg-green-400 font-semibold text-white md:px-10 py-6 md:text-lg text-sm border-b-3 border-green-600">
                   Visit Us Now
                 </Button>
                 </a>
@@ -96,7 +96,7 @@ export default function Component() {
       </section>
 
       {/* Create from a small garden section */}
-      <section className="py-20 bg-gray-50" id="about">
+      <section className="pt-20 pb-10 bg-white" id="about">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16" data-aos="fade-zoom-in">
             <div className="flex items-center justify-center mb-4">
@@ -147,9 +147,18 @@ export default function Component() {
       </section>
 
       {/* Trees section */}
-      <section className="py-16 bg-white" data-aos="fade-zoom-in">
+      <section className="pb-16 pt-0 bg-white" data-aos="fade-zoom-in">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-8 items-center">
+            <div className="bg-green-700 text-white p-8 rounded-2xl max-h-[375px] lg:h-[320px] flex flex-col justify-center">
+              <h3 className="text-3xl font-bold mb-4">Tranquil is our middle name</h3>
+              <p className="text-green-100 mb-6">
+                Visitors return not only to shop our beautiful plants and accessories but also to attend our unique Terrace restaurant, Beer Garden, weekend Craft Market, Pet Shop, Book Shop, weekend Art Gallery and much more. 
+              </p>
+              <a href="#services">
+                <Button className="bg-green-500 hover:bg-green-400 text-white w-fit border-b-3 border-green-600">See More</Button>
+              </a>
+            </div>
             <div className="lg:col-span-2">
               <Image
                 src="/tranquil.jpg"
@@ -158,15 +167,6 @@ export default function Component() {
                 height={400}
                 className="rounded-2xl shadow-lg w-[800px] lg:h-[320px] h-[370px] object-cover object-bottom"
               />
-            </div>
-            <div className="bg-green-800 text-white p-8 rounded-2xl max-h-[375px] lg:h-[320px] flex flex-col justify-center">
-              <h3 className="text-3xl font-bold mb-4">Tranquil is our middle name</h3>
-              <p className="text-green-100 mb-6">
-                Visitors return not only to shop our beautiful plants and accessories but also to attend our unique Terrace restaurant, Beer Garden, weekend Craft Market, Pet Shop, Book Shop, weekend Art Gallery and much more. 
-              </p>
-              <a href="#services">
-                <Button className="bg-green-500 hover:bg-green-400 text-white w-fit border-b-3 border-green-600">See More</Button>
-              </a>
             </div>
           </div>
         </div>
@@ -184,14 +184,15 @@ export default function Component() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { name: "Trees and Palms", image: "/ferns.jpg", delay: "0" , direction: "fade-right"},
-              { name: "Seedlings", image: "/seedlings.jpg", delay: "100", direction: "fade-right"},
-              { name: "Shrubs", image: "/shrubs.jpg", delay: "200", direction: "fade-right"},
-              { name: "Indoor plants", image: "/indoor.jpg", delay: "300", direction: "fade-right"},
-              { name: "Pots", image: "/pots.jpg", delay: "400", direction: "fade-right"},
-              { name: "Water features", image: "/water.jpg", delay: "500", direction: "fade-right"},
-              { name: "Garden Ornaments", image: "/garden.jpg", delay: "600", direction: "fade-right"},
-              { name: "Potting soil and Fertilizers", image: "/soil.jpg", delay: "700", direction: "fade-right"},
+              { name: "Trees and Palms", image: "/ferns.jpg", delay: "0" , direction: "fade-right", description:"Add structure and beauty to any landscape with our selection of trees and palms—ideal for shade, privacy, or creating a tropical feel."},
+              { name: "Seedlings", image: "/seedlings.jpg", delay: "100", direction: "fade-right", description:"Healthy and ready-to-plant seedlings to kickstart your garden—perfect for vegetables, herbs, and flowers."},
+              { name: "Shrubs", image: "/shrubs.jpg", delay: "200", direction: "fade-right", description:"Low-maintenance, hardy shrubs to define borders, fill empty spaces, and bring year-round greenery or seasonal color."},
+              { name: "Indoor plants", image: "/indoor.jpg", delay: "300", direction: "fade-right", description:"Liven up your home or office with air-purifying indoor plants that thrive in various light conditions."},
+              { name: "Pots", image: "/pots.jpg", delay: "400", direction: "fade-right", description:"From modern to classic styles, our wide range of pots suits any plant and complements your décor, indoors or out."},
+              { name: "Water features", image: "/water.jpg", delay: "500", direction: "fade-right", description:"Transform your garden into a peaceful retreat with elegant water features that bring soothing sounds and visual charm."},
+              { name: "Garden Ornaments", image: "/garden.jpg", delay: "600", direction: "fade-right", description:"Enhance your garden's personality with unique ornaments—from statues to decorative accents that add character and charm."},
+              { name: "Potting soil and Fertilizers", image: "/soil.jpg", delay: "700", direction: "fade-right", description:"Nourish your plants with premium potting soil and fertilizers designed to boost growth and keep your garden thriving."},
+
             ].map((plant, index) => (
               <Card key={index} className={`group hover:shadow-lg transition-shadow`} data-aos={plant.direction} data-aos-delay={plant.delay}>
                 <CardContent className="p-4">
@@ -206,11 +207,7 @@ export default function Component() {
                   </div>
                   <h3 className="font-semibold text-gray-900 mb-2">{plant.name}</h3>
                   <div className="flex items-center justify-between">
-                    <a href="https://maps.app.goo.gl/38eySRVVsQuhjSRE9" target="_ " >
-                      <Button size="sm" className="bg-green-600 hover:bg-green-700 border-b-3 border-green-700">
-                        Visit Us Now
-                      </Button>
-                    </a>
+                    <p className="text-sm text-gray-600">{plant.description}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -382,7 +379,7 @@ export default function Component() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <h2 className="text-4xl font-bold mb-8" data-aos="fade-zoom-in">Building Your Dream Garden</h2>
-            <div className="relative inline-block" data-aos="fade-left">
+            <div className="relative inline-block" data-aos="fade-zoom-in">
               <Image
                 src="/4.jpg"
                 alt="Garden video thumbnail"
