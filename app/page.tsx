@@ -150,6 +150,15 @@ export default function Component() {
       <section className="pb-16 pt-0 bg-white" data-aos="fade-zoom-in">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-8 items-center">
+            <div className="lg:col-span-2 lg:hidden flex">
+              <Image
+                src="/tranquil.jpg"
+                alt="Beautiful trees"
+                width={600}
+                height={400}
+                className="rounded-2xl shadow-lg w-[800px] lg:h-[320px] h-[370px] object-cover object-bottom"
+              />
+            </div>
             <div className="bg-green-700 text-white p-8 rounded-2xl max-h-[375px] lg:h-[320px] flex flex-col justify-center">
               <h3 className="text-3xl font-bold mb-4">Tranquil is our middle name</h3>
               <p className="text-green-100 mb-6">
@@ -159,7 +168,7 @@ export default function Component() {
                 <Button className="bg-green-500 hover:bg-green-400 text-white w-fit border-b-3 border-green-600">See More</Button>
               </a>
             </div>
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-2 lg:flex hidden">
               <Image
                 src="/tranquil.jpg"
                 alt="Beautiful trees"
